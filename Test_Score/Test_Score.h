@@ -2,9 +2,9 @@
 class Test_Score
 {
 private:
+	void showGrade();
 
 public:
-	void showGrade();
 	void displayMenu();
 
 
