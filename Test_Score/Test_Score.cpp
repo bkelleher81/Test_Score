@@ -16,8 +16,7 @@ void Test_Score::showGrade()
     int testScore = -1;              // Holds the user entered numeric test score
 
     // Get the numeric test score
-    cout << "Enter your numeric test score and I will\n"
-        << "tell you the letter grade you earned: ";
+    cout << "Enter your numeric test score: ";
     cin >> testScore;
 
     // Check if the input is valid
@@ -41,5 +40,28 @@ void Test_Score::showGrade()
         cout << "\nThat is an invalid score. Run the program\n"
             << "again and enter a value in the range of\n"
             << MIN_SCORE << " through " << MAX_SCORE << ".\n";
+    }
+    displayMenu();
+}
+
+void Test_Score::displayMenu()
+{
+    int choice = -1;
+    cout << "1. Enter sutudent score." << endl;
+    cout << "2. Quit." << endl;
+    cin >> choice;
+
+    if (choice == 1)
+    {
+        showGrade();
+    }
+    else if (choice == 2)
+    {
+        cout << "Goodbye.\n";
+    }
+    else
+    {
+        cout << "Choose option 1 or 2!\n";
+        displayMenu();
     }
 }

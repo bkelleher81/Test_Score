@@ -3,7 +3,8 @@
 int main()
 {
 	Test_Score h;
-	h.showGrade();
+	
+	h.displayMenu();
 
 		return 0;
 }

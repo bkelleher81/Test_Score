@@ -5,6 +5,8 @@ private:
 
 public:
 	void showGrade();
+	void displayMenu();
+
 
 };
 
